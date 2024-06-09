@@ -23,9 +23,10 @@ Make sure that your configuration is validated against [config-schema.json](http
 
 ## Might come in handy
 ```
-mkdir ~/pupin
-nano my-config.json
+cd <project-path>
 go build .
+nano my-config.json
+mkdir ~/pupin
 cp pupin my-config.json ~/pupin
 #(name alias whatever you like)
 echo "alias ppn='~/pupin/pupin run ~/pupin/config-example.json'" >> ~/.zshrc
