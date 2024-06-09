@@ -1,10 +1,12 @@
-# Pupin
+# Pupin - Customizable CLI command menu generator
 
 Pupin is a CLI tool that renders interactive CLI menu based on the provided configuration json. Something like interactive command menu.
 
 Every tree can contain multiple options. Each option can be a subtree or a command.
 If user selects subtree, subtree options will appear.
 If user selects command, command will be executed.
+
+![demonstration](./demonstration.gif)
 
 ## Usage
 To run your custom menu, you need to:
@@ -23,6 +25,7 @@ Make sure that your configuration is validated against [config-schema.json](http
 ```
 mkdir ~/pupin
 nano my-config.json
+go build .
 cp pupin my-config.json ~/pupin
 #(name alias whatever you like)
 echo "alias ppn='~/pupin/pupin run ~/pupin/config-example.json'" >> ~/.zshrc
