@@ -1,12 +1,12 @@
 {
-    "name": "Main Menu",
+    "name": "Command Center",
     "options": [
         {
-            "name": "Directory Management",
+            "name": "Explore Files",
             "options": [
                 {
                     "name": "List files",
-                    "command": "ls -a"
+                    "command": "ls"
                 },
                 {
                     "name": "Current directory",
@@ -23,7 +23,7 @@
                 },
                 {
                     "name": "Upgrade System",
-                    "command": "apt-get upgrade -y"
+                    "command": "sudo apt-get upgrade -y"
                 },
                 {
                     "name": "Check Disk Usage",
@@ -32,26 +32,26 @@
             ]
         },
         {
-            "name": "Network Configuration",
+            "name": "Mystic Realm",
             "options": [
                 {
-                    "name": "View Network Interfaces",
-                    "command": "node"
+                    "name": "Magic Cat",
+                    "command": "echo '🐱✨ Abracadabra! You've been visited by the Magic Cat!'"
                 },
                 {
-                    "name": "Configure IP Address",
+                    "name": "Dance Party",
+                    "command": "echo '💃🕺 Welcome to the CLI Dance Party! Let's groove!'"
+                },
+                {
+                    "name": "Secret Chamber",
                     "options": [
                         {
-                            "name": "Command 1",
-                            "command": "echo 'Command 1'"
+                            "name": "Sneaky Snake",
+                            "command": "echo '🐍 Hiss! You've encountered the Sneaky Snake!'"
                         },
                         {
-                            "name": "Command 2",
-                            "command": "echo 'hello' 'from' 'pupin'"
-                        },
-                        {
-                            "name": "Command 3",
-                            "command": "echo 'Command 3'"
+                            "name": "Mystic Mirror",
+                            "command": "echo '🔮✨ Gaze into the Mystic Mirror for wisdom!'"
                         }
                     ]
                 }

@@ -1,5 +1,5 @@
 /*
-Copyright © 2024 NAME HERE <EMAIL ADDRESS>
+Copyright © 2024 VELJKO TERZIC <veljkot@gmail.com>
 */
 package cmd
 
@@ -16,9 +16,10 @@ var rootCmd = &cobra.Command{
 	Short: "Pupin parses JSON into interactive hierarchical menu structure",
 	Long:  `Pupin is a powerful command-line interface (CLI) framework designed to dynamically parse JSON configurations into interactive hierarchical menus.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println(`Just run: pupin run <path_to_your_json>
+		fmt.Println(`Just run: pupin run <config-path>
 		
-For a bit more detailed help, check github.com/vterzic/pupin/readme.md`)
+For help run pupin --help
+For a bit more details, visit github.com/vterzic/pupin/readme.md`)
 	},
 }
 

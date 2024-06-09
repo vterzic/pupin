@@ -16,14 +16,17 @@ import (
 
 // runCmd represents the run command
 var runCmd = &cobra.Command{
-	Use:   "run",
+	Use:   "run <config-path>",
 	Short: "Renders menu based on the provided configuration",
 	Long: `Renders menu based on the provided configuration. 
 	
 Menu configuration path must be provided as an argument. 
 Make sure that your config file is aligned with config-schema.json
 
-e.g. pupin run ./config-example.json`,
+Example usage:
+pupin run ./config-example.json
+
+For more information, visit https://github.com/vterzic/pupin/blob/main/readme.md`,
 	DisableFlagsInUseLine: true,
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) != 1 {
@@ -33,7 +36,6 @@ e.g. pupin run ./config-example.json`,
 		}
 
 		initMenu(args)
-		fmt.Println("Bye!")
 	},
 }
 
