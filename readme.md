@@ -33,3 +33,9 @@ source ~/.zshrc
 It is never a good idea to use a precompiled binary with sensitive data.
 
 Instead, compile your own binaries by running `go build .`.
+
+## TODO
+- runtime json validation
+- nonExit flag for commands
+- colors for submenus
+- tests (doubt it)
