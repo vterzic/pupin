@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Pupin menu configuration object",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "options": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/menuItem"
+        }
+      }
+    },
+    "required": ["name", "options"],
+    "definitions": {
+      "menuItem": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "command": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/menuItem"
+            }
+          }
+        },
+        "required": ["name"],
+        "oneOf": [
+          {
+            "required": ["command"]
+          },
+          {
+            "required": ["options"]
+          }
+        ]
+      }
+    }
+  }

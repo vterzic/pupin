@@ -1,0 +1,61 @@
+{
+    "name": "Main Menu",
+    "options": [
+        {
+            "name": "Directory Management",
+            "options": [
+                {
+                    "name": "List files",
+                    "command": "ls -a"
+                },
+                {
+                    "name": "Current directory",
+                    "command": "pwd"
+                }
+            ]
+        },
+        {
+            "name": "System Settings",
+            "options": [
+                {
+                    "name": "Update System",
+                    "command": "sudo apt-get update"
+                },
+                {
+                    "name": "Upgrade System",
+                    "command": "apt-get upgrade -y"
+                },
+                {
+                    "name": "Check Disk Usage",
+                    "command": "df -h"
+                }
+            ]
+        },
+        {
+            "name": "Network Configuration",
+            "options": [
+                {
+                    "name": "View Network Interfaces",
+                    "command": "node"
+                },
+                {
+                    "name": "Configure IP Address",
+                    "options": [
+                        {
+                            "name": "Command 1",
+                            "command": "echo 'Command 1'"
+                        },
+                        {
+                            "name": "Command 2",
+                            "command": "echo 'hello' 'from' 'pupin'"
+                        },
+                        {
+                            "name": "Command 3",
+                            "command": "echo 'Command 3'"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
