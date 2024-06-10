@@ -26,17 +26,17 @@ Make sure that your configuration is validated against [config-schema.json](http
 cd <project-path>
 go build .
 nano my-config.json
-mkdir ~/pupin
-cp pupin my-config.json ~/pupin
+mkdir ~/.pupin
+cp pupin my-config.json ~/.pupin
 #(name alias whatever you like)
-echo "alias ppn='~/pupin/pupin run ~/pupin/config-example.json'" >> ~/.zshrc
+echo "alias ppn='~/.pupin/pupin run ~/.pupin/my-config.json'" >> ~/.zshrc
 source ~/.zshrc
 ```
 
 ## ❗️Don't trust my binaries
 It is never a good idea to use a precompiled binary with sensitive data.
 
-Instead, compile your own binaries by running `go build .`.
+Instead, compile your own binaries by running `go build .`
 
 ## TODO
 - runtime json validation
